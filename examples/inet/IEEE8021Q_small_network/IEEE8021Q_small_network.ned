@@ -18,7 +18,7 @@ package core4inet.examples.inet.IEEE8021Q_small_network;
 import core4inet.nodes.inet.RTIPHost;
 import core4inet.nodes.ethernet.avb_AS6802.TTEAVBEtherSwitch;
 
-import inet.networklayer.configurator.ipv4.IPv4NetworkConfigurator;
+import inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator;
 import inet.node.ethernet.Eth100M;
 
 //
@@ -50,7 +50,7 @@ network IEEE8021Q_small_network
                 ethg[3];
         }
 
-        configurator: IPv4NetworkConfigurator {
+        configurator: Ipv4NetworkConfigurator {
             @display("p=89,22");
         }
     connections:
